@@ -46,11 +46,20 @@ func generate_pieces():
 			var region = Rect2(i * piece_size.x, j * piece_size.y, piece_size.x, piece_size.y)
 			var sub_image = image.get_region(Rect2i(region.position, region.size))
 			var sub_tex = ImageTexture.create_from_image(sub_image)
-			var pos = Vector2(
-				randi_range(100, 800),
-				randi_range(200, 800)
-			)
+			var pos
+			
 			var index = int(i * G.grid_size.x +j)
+			randomize()
+			if index <= (G.grid_size.x * G.grid_size.y)/2:
+				pos = Vector2(
+					randi_range(100, 200),
+					randi_range(100, 800)
+				)
+			else:
+				pos = Vector2(
+					randi_range(500, 800),
+					randi_range(100, 800)
+				)
 			piece.init_piece(
 				index,
 				sub_tex,
