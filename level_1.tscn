@@ -1,0 +1,185 @@
+[gd_scene load_steps=22 format=3 uid="uid://dd831tcu1o1ph"]
+
+[ext_resource type="PackedScene" uid="uid://bf17gihkqloob" path="res://texture_rect.tscn" id="1_0f6xm"]
+[ext_resource type="Texture2D" uid="uid://cntr0xgaaaau7" path="res://paintings/laundry/row-1-column-1.png" id="2_dliia"]
+[ext_resource type="Texture2D" uid="uid://bdvdydqernrt" path="res://paintings/laundry/row-1-column-2.png" id="3_swcja"]
+[ext_resource type="Texture2D" uid="uid://cdgh70h4mdx7d" path="res://paintings/laundry/row-1-column-3.png" id="4_b1mtc"]
+[ext_resource type="Texture2D" uid="uid://n454fxm26tyo" path="res://paintings/laundry/row-1-column-4.png" id="5_vajw1"]
+[ext_resource type="Texture2D" uid="uid://b2dmrtaqbl3jp" path="res://paintings/laundry/row-2-column-1.png" id="6_61mb0"]
+[ext_resource type="Texture2D" uid="uid://bt2sqdfoc3l15" path="res://paintings/laundry/row-2-column-2.png" id="7_bg307"]
+[ext_resource type="Texture2D" uid="uid://bmdancpk8no5" path="res://paintings/laundry/row-2-column-3.png" id="8_m7e77"]
+[ext_resource type="Texture2D" uid="uid://pjspedwsvgqd" path="res://paintings/laundry/row-2-column-4.png" id="9_ldk3d"]
+[ext_resource type="Texture2D" uid="uid://c3prf55qyhwk7" path="res://paintings/laundry/row-3-column-1.png" id="10_mx8ct"]
+[ext_resource type="Texture2D" uid="uid://c60lx88ui2g8f" path="res://paintings/laundry/row-3-column-2.png" id="11_s0e0s"]
+[ext_resource type="Texture2D" uid="uid://dtcv0cq884b8e" path="res://paintings/laundry/row-3-column-3.png" id="12_ichc6"]
+[ext_resource type="Texture2D" uid="uid://bjasltxnd87rk" path="res://paintings/laundry/row-3-column-4.png" id="13_dhq5e"]
+[ext_resource type="Texture2D" uid="uid://bjsphayjdd3ek" path="res://paintings/laundry/row-4-column-1.png" id="14_l3e4e"]
+[ext_resource type="Texture2D" uid="uid://xcdhny1d3u1f" path="res://paintings/laundry/row-4-column-2.png" id="15_3gv83"]
+[ext_resource type="Texture2D" uid="uid://crqc8wewoxi2o" path="res://paintings/laundry/row-4-column-3.png" id="16_r2swu"]
+[ext_resource type="Texture2D" uid="uid://4akohm7g23au" path="res://paintings/laundry/row-4-column-4.png" id="17_vfcgl"]
+[ext_resource type="Texture2D" uid="uid://b5twvf7fc0k67" path="res://paintings/laundry/row-5-column-3.png" id="18_n1mri"]
+[ext_resource type="Texture2D" uid="uid://vxc2ffjj2bjc" path="res://paintings/laundry/row-5-column-1.png" id="19_nemio"]
+[ext_resource type="Texture2D" uid="uid://3v0xi1tnfnic" path="res://paintings/laundry/row-5-column-2.png" id="20_fw0sp"]
+[ext_resource type="Texture2D" uid="uid://d05bey5da74xl" path="res://paintings/laundry/row-5-column-4.png" id="21_wddfy"]
+
+[node name="level_1" type="Node2D"]
+
+[node name="TextureRect" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 345.0
+offset_top = 578.0
+offset_right = 413.9
+offset_bottom = 646.0
+scale = Vector2(1, 1)
+texture = ExtResource("2_dliia")
+
+[node name="TextureRect2" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 552.0
+offset_top = 714.0
+offset_right = 620.9
+offset_bottom = 782.0
+scale = Vector2(1, 1)
+texture = ExtResource("3_swcja")
+
+[node name="TextureRect3" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 483.0
+offset_top = 578.0
+offset_right = 551.9
+offset_bottom = 646.0
+scale = Vector2(1, 1)
+texture = ExtResource("4_b1mtc")
+
+[node name="TextureRect4" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 552.0
+offset_top = 578.0
+offset_right = 620.9
+offset_bottom = 646.0
+scale = Vector2(1, 1)
+texture = ExtResource("5_vajw1")
+
+[node name="TextureRect5" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 276.0
+offset_top = 578.0
+offset_right = 344.9
+offset_bottom = 646.0
+scale = Vector2(1, 1)
+texture = ExtResource("6_61mb0")
+
+[node name="TextureRect6" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 276.0
+offset_top = 646.0
+offset_right = 344.9
+offset_bottom = 714.0
+scale = Vector2(1, 1)
+texture = ExtResource("7_bg307")
+
+[node name="TextureRect7" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 483.0
+offset_top = 646.0
+offset_right = 551.9
+offset_bottom = 714.0
+scale = Vector2(1, 1)
+texture = ExtResource("8_m7e77")
+
+[node name="TextureRect8" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 414.0
+offset_top = 578.0
+offset_right = 482.9
+offset_bottom = 646.0
+scale = Vector2(1, 1)
+texture = ExtResource("9_ldk3d")
+
+[node name="TextureRect9" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 345.0
+offset_top = 646.0
+offset_right = 413.9
+offset_bottom = 714.0
+scale = Vector2(1, 1)
+texture = ExtResource("10_mx8ct")
+
+[node name="TextureRect10" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 414.0
+offset_top = 646.0
+offset_right = 482.9
+offset_bottom = 714.0
+scale = Vector2(1, 1)
+texture = ExtResource("11_s0e0s")
+
+[node name="TextureRect11" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 552.0
+offset_top = 646.0
+offset_right = 620.9
+offset_bottom = 714.0
+scale = Vector2(1, 1)
+texture = ExtResource("12_ichc6")
+
+[node name="TextureRect12" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 483.0
+offset_top = 782.0
+offset_right = 551.9
+offset_bottom = 850.0
+scale = Vector2(1, 1)
+texture = ExtResource("13_dhq5e")
+
+[node name="TextureRect13" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 483.0
+offset_top = 714.0
+offset_right = 552.0
+offset_bottom = 782.0
+scale = Vector2(1, 1)
+texture = ExtResource("14_l3e4e")
+
+[node name="TextureRect14" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 345.0
+offset_top = 714.0
+offset_right = 413.9
+offset_bottom = 782.0
+scale = Vector2(1, 1)
+texture = ExtResource("15_3gv83")
+
+[node name="TextureRect15" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 276.0
+offset_top = 782.0
+offset_right = 344.9
+offset_bottom = 850.0
+scale = Vector2(1, 1)
+texture = ExtResource("16_r2swu")
+
+[node name="TextureRect16" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 345.0
+offset_top = 782.0
+offset_right = 413.9
+offset_bottom = 850.0
+scale = Vector2(1, 1)
+texture = ExtResource("17_vfcgl")
+
+[node name="TextureRect17" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 414.0
+offset_top = 782.0
+offset_right = 482.9
+offset_bottom = 850.0
+scale = Vector2(1, 1)
+texture = ExtResource("18_n1mri")
+
+[node name="TextureRect18" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 414.0
+offset_top = 714.0
+offset_right = 482.9
+offset_bottom = 782.0
+scale = Vector2(1, 1)
+texture = ExtResource("19_nemio")
+
+[node name="TextureRect19" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 276.0
+offset_top = 714.0
+offset_right = 344.9
+offset_bottom = 782.0
+scale = Vector2(1, 1)
+texture = ExtResource("20_fw0sp")
+
+[node name="TextureRect20" parent="." instance=ExtResource("1_0f6xm")]
+offset_left = 552.0
+offset_top = 782.0
+offset_right = 620.9
+offset_bottom = 850.0
+scale = Vector2(1, 1)
+texture = ExtResource("21_wddfy")

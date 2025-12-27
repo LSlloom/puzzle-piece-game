@@ -22,7 +22,6 @@ G="*res://g.gd"
 
 window/size/viewport_width=1024
 window/size/viewport_height=1024
-window/size/mode=4
 window/stretch/mode="viewport"
 
 [editor_plugins]
