@@ -275,14 +275,6 @@ correct_id = "7"
 level_1_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect7")
 
-[node name="slot8" parent="level_1_slots/slot7" instance=ExtResource("1_0f6xm")]
-offset_left = -69.0
-offset_right = 0.0
-script = ExtResource("24_01qlv")
-correct_id = "8"
-level_1_path = NodePath("../..")
-texture_rect_path = NodePath("../../../pieces/TextureRect8")
-
 [node name="slot9" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
 offset_left = 164.5
 offset_top = 425.5
@@ -403,6 +395,16 @@ correct_id = "20"
 level_1_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect20")
 
+[node name="slot8" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 233.5
+offset_top = 425.5
+offset_right = 302.5
+offset_bottom = 493.5
+script = ExtResource("24_01qlv")
+correct_id = "8"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect8")
+
 [node name="Reset" type="Button" parent="."]
 offset_left = 31.0
 offset_top = 730.0
@@ -419,5 +421,25 @@ offset_right = 77.0
 offset_bottom = 27.0
 scale = Vector2(2, 2)
 text = "RESET"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+visible = false
+offset_left = 35.0
+offset_top = 40.0
+offset_right = 1126.0
+offset_bottom = 1452.0
+color = Color(0.803922, 0.552941, 0.298039, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = -374.0
+offset_top = 225.0
+offset_right = -52.0
+offset_bottom = 286.0
+scale = Vector2(6, 6)
+text = "PUZZLE COMPLETED"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="Reset" to="Reset" method="_on_pressed"]
