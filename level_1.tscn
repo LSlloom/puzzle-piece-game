@@ -1,6 +1,7 @@
-[gd_scene load_steps=22 format=3 uid="uid://dd831tcu1o1ph"]
+[gd_scene load_steps=26 format=3 uid="uid://dd831tcu1o1ph"]
 
 [ext_resource type="PackedScene" uid="uid://bf17gihkqloob" path="res://texture_rect.tscn" id="1_0f6xm"]
+[ext_resource type="Script" path="res://level_1.gd" id="1_bkmtj"]
 [ext_resource type="Texture2D" uid="uid://cntr0xgaaaau7" path="res://paintings/laundry/row-1-column-1.png" id="2_dliia"]
 [ext_resource type="Texture2D" uid="uid://bdvdydqernrt" path="res://paintings/laundry/row-1-column-2.png" id="3_swcja"]
 [ext_resource type="Texture2D" uid="uid://cdgh70h4mdx7d" path="res://paintings/laundry/row-1-column-3.png" id="4_b1mtc"]
@@ -21,165 +22,402 @@
 [ext_resource type="Texture2D" uid="uid://vxc2ffjj2bjc" path="res://paintings/laundry/row-5-column-1.png" id="19_nemio"]
 [ext_resource type="Texture2D" uid="uid://3v0xi1tnfnic" path="res://paintings/laundry/row-5-column-2.png" id="20_fw0sp"]
 [ext_resource type="Texture2D" uid="uid://d05bey5da74xl" path="res://paintings/laundry/row-5-column-4.png" id="21_wddfy"]
+[ext_resource type="Texture2D" uid="uid://j32go4xdxup8" path="res://pixil-frame-0 (4).png" id="22_l0v54"]
+[ext_resource type="Script" path="res://reset.gd" id="23_g57bm"]
+[ext_resource type="Script" path="res://slot.gd" id="24_01qlv"]
 
-[node name="level_1" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 
-[node name="TextureRect" parent="." instance=ExtResource("1_0f6xm")]
+[node name="pieces" type="Node2D" parent="."]
+position = Vector2(-359, -298)
+scale = Vector2(2, 2)
+metadata/_edit_group_ = true
+
+[node name="TextureRect" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 345.0
 offset_top = 578.0
 offset_right = 413.9
 offset_bottom = 646.0
-scale = Vector2(1, 1)
 texture = ExtResource("2_dliia")
+id = "1"
 
-[node name="TextureRect2" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect2" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 552.0
 offset_top = 714.0
 offset_right = 620.9
 offset_bottom = 782.0
-scale = Vector2(1, 1)
 texture = ExtResource("3_swcja")
+id = "2"
 
-[node name="TextureRect3" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect3" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 483.0
 offset_top = 578.0
 offset_right = 551.9
 offset_bottom = 646.0
-scale = Vector2(1, 1)
 texture = ExtResource("4_b1mtc")
+id = "3"
 
-[node name="TextureRect4" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect4" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 552.0
 offset_top = 578.0
 offset_right = 620.9
 offset_bottom = 646.0
-scale = Vector2(1, 1)
 texture = ExtResource("5_vajw1")
+id = "4"
 
-[node name="TextureRect5" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect5" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 276.0
 offset_top = 578.0
 offset_right = 344.9
 offset_bottom = 646.0
-scale = Vector2(1, 1)
 texture = ExtResource("6_61mb0")
+id = "5"
 
-[node name="TextureRect6" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect6" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 276.0
 offset_top = 646.0
 offset_right = 344.9
 offset_bottom = 714.0
-scale = Vector2(1, 1)
 texture = ExtResource("7_bg307")
+id = "6"
 
-[node name="TextureRect7" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect7" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 483.0
 offset_top = 646.0
 offset_right = 551.9
 offset_bottom = 714.0
-scale = Vector2(1, 1)
 texture = ExtResource("8_m7e77")
+id = "7"
 
-[node name="TextureRect8" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect8" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 414.0
 offset_top = 578.0
 offset_right = 482.9
 offset_bottom = 646.0
-scale = Vector2(1, 1)
 texture = ExtResource("9_ldk3d")
+id = "8"
 
-[node name="TextureRect9" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect9" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 345.0
 offset_top = 646.0
 offset_right = 413.9
 offset_bottom = 714.0
-scale = Vector2(1, 1)
 texture = ExtResource("10_mx8ct")
+id = "9"
 
-[node name="TextureRect10" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect10" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 414.0
 offset_top = 646.0
 offset_right = 482.9
 offset_bottom = 714.0
-scale = Vector2(1, 1)
 texture = ExtResource("11_s0e0s")
+id = "10"
 
-[node name="TextureRect11" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect11" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 552.0
 offset_top = 646.0
 offset_right = 620.9
 offset_bottom = 714.0
-scale = Vector2(1, 1)
 texture = ExtResource("12_ichc6")
+id = "11"
 
-[node name="TextureRect12" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect12" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 483.0
 offset_top = 782.0
 offset_right = 551.9
 offset_bottom = 850.0
-scale = Vector2(1, 1)
 texture = ExtResource("13_dhq5e")
+id = "12"
 
-[node name="TextureRect13" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect13" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 483.0
 offset_top = 714.0
 offset_right = 552.0
 offset_bottom = 782.0
-scale = Vector2(1, 1)
 texture = ExtResource("14_l3e4e")
+id = "13"
 
-[node name="TextureRect14" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect14" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 345.0
 offset_top = 714.0
 offset_right = 413.9
 offset_bottom = 782.0
-scale = Vector2(1, 1)
 texture = ExtResource("15_3gv83")
+id = "14"
 
-[node name="TextureRect15" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect15" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 276.0
 offset_top = 782.0
 offset_right = 344.9
 offset_bottom = 850.0
-scale = Vector2(1, 1)
 texture = ExtResource("16_r2swu")
+id = "15"
 
-[node name="TextureRect16" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect16" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 345.0
 offset_top = 782.0
 offset_right = 413.9
 offset_bottom = 850.0
-scale = Vector2(1, 1)
 texture = ExtResource("17_vfcgl")
+id = "16"
 
-[node name="TextureRect17" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect17" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 414.0
 offset_top = 782.0
 offset_right = 482.9
 offset_bottom = 850.0
-scale = Vector2(1, 1)
 texture = ExtResource("18_n1mri")
+id = "17"
 
-[node name="TextureRect18" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect18" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 414.0
 offset_top = 714.0
 offset_right = 482.9
 offset_bottom = 782.0
-scale = Vector2(1, 1)
 texture = ExtResource("19_nemio")
+id = "18"
 
-[node name="TextureRect19" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect19" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 276.0
 offset_top = 714.0
 offset_right = 344.9
 offset_bottom = 782.0
-scale = Vector2(1, 1)
 texture = ExtResource("20_fw0sp")
+id = "19"
 
-[node name="TextureRect20" parent="." instance=ExtResource("1_0f6xm")]
+[node name="TextureRect20" parent="pieces" instance=ExtResource("1_0f6xm")]
 offset_left = 552.0
 offset_top = 782.0
 offset_right = 620.9
 offset_bottom = 850.0
-scale = Vector2(1, 1)
 texture = ExtResource("21_wddfy")
+id = "20"
+
+[node name="Pixil-frame-0(4)" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(471, 403.75)
+scale = Vector2(33.9167, 35.3542)
+texture = ExtResource("22_l0v54")
+
+[node name="level_1_slots" type="Node2D" parent="."]
+position = Vector2(72, -366)
+scale = Vector2(2, 2)
+script = ExtResource("1_bkmtj")
+metadata/_edit_group_ = true
+
+[node name="slot" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 95.5
+offset_top = 222.0
+offset_right = 164.5
+offset_bottom = 290.0
+script = ExtResource("24_01qlv")
+correct_id = "1"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect")
+
+[node name="slot2" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 302.5
+offset_top = 493.5
+offset_right = 371.5
+offset_bottom = 561.5
+script = ExtResource("24_01qlv")
+correct_id = "2"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect2")
+
+[node name="slot3" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 233.5
+offset_top = 493.5
+offset_right = 302.5
+offset_bottom = 561.5
+script = ExtResource("24_01qlv")
+correct_id = "3"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect3")
+
+[node name="slot4" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 164.5
+offset_top = 493.5
+offset_right = 233.5
+offset_bottom = 561.5
+script = ExtResource("24_01qlv")
+correct_id = "4"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect4")
+
+[node name="slot5" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 95.5
+offset_top = 493.5
+offset_right = 164.5
+offset_bottom = 561.5
+script = ExtResource("24_01qlv")
+correct_id = "5"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect5")
+
+[node name="slot6" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 164.5
+offset_top = 222.0
+offset_right = 233.5
+offset_bottom = 290.0
+script = ExtResource("24_01qlv")
+correct_id = "6"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect6")
+
+[node name="slot7" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 302.5
+offset_top = 425.5
+offset_right = 371.5
+offset_bottom = 493.5
+script = ExtResource("24_01qlv")
+correct_id = "7"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect7")
+
+[node name="slot8" parent="level_1_slots/slot7" instance=ExtResource("1_0f6xm")]
+offset_left = -69.0
+offset_right = 0.0
+script = ExtResource("24_01qlv")
+correct_id = "8"
+level_1_path = NodePath("../..")
+texture_rect_path = NodePath("../../../pieces/TextureRect8")
+
+[node name="slot9" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 164.5
+offset_top = 425.5
+offset_right = 233.5
+offset_bottom = 493.5
+script = ExtResource("24_01qlv")
+correct_id = "9"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect9")
+
+[node name="slot10" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 95.5
+offset_top = 425.5
+offset_right = 164.5
+offset_bottom = 493.5
+script = ExtResource("24_01qlv")
+correct_id = "10"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect10")
+
+[node name="slot11" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 164.5
+offset_top = 289.5
+offset_right = 233.5
+offset_bottom = 357.5
+script = ExtResource("24_01qlv")
+correct_id = "11"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect11")
+
+[node name="slot12" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 233.5
+offset_top = 222.0
+offset_right = 302.5
+offset_bottom = 290.0
+script = ExtResource("24_01qlv")
+correct_id = "12"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect12")
+
+[node name="slot13" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 302.5
+offset_top = 222.0
+offset_right = 371.5
+offset_bottom = 290.0
+script = ExtResource("24_01qlv")
+correct_id = "13"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect13")
+
+[node name="slot14" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 302.5
+offset_top = 358.0
+offset_right = 371.5
+offset_bottom = 426.0
+script = ExtResource("24_01qlv")
+correct_id = "14"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect14")
+
+[node name="slot15" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 233.5
+offset_top = 358.0
+offset_right = 302.5
+offset_bottom = 426.0
+script = ExtResource("24_01qlv")
+correct_id = "15"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect15")
+
+[node name="slot16" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 164.5
+offset_top = 358.0
+offset_right = 233.5
+offset_bottom = 426.0
+script = ExtResource("24_01qlv")
+correct_id = "16"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect16")
+
+[node name="slot17" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 302.5
+offset_top = 289.5
+offset_right = 371.5
+offset_bottom = 357.5
+script = ExtResource("24_01qlv")
+correct_id = "17"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect17")
+
+[node name="slot18" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 95.5
+offset_top = 358.0
+offset_right = 164.5
+offset_bottom = 426.0
+script = ExtResource("24_01qlv")
+correct_id = "18"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect18")
+
+[node name="slot19" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 95.5
+offset_top = 289.5
+offset_right = 164.5
+offset_bottom = 357.5
+script = ExtResource("24_01qlv")
+correct_id = "19"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect19")
+
+[node name="slot20" parent="level_1_slots" instance=ExtResource("1_0f6xm")]
+offset_left = 233.5
+offset_top = 289.5
+offset_right = 302.5
+offset_bottom = 357.5
+script = ExtResource("24_01qlv")
+correct_id = "20"
+level_1_path = NodePath("..")
+texture_rect_path = NodePath("../../pieces/TextureRect20")
+
+[node name="Reset" type="Button" parent="."]
+offset_left = 31.0
+offset_top = 730.0
+offset_right = 181.0
+offset_bottom = 787.0
+script = ExtResource("23_g57bm")
+
+[node name="Label" type="Label" parent="Reset"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 31.0
+offset_top = 4.0
+offset_right = 77.0
+offset_bottom = 27.0
+scale = Vector2(2, 2)
+text = "RESET"
+
+[connection signal="pressed" from="Reset" to="Reset" method="_on_pressed"]
