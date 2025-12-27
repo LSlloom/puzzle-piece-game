@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6bahvsonp6ns"]
+[gd_scene load_steps=6 format=3 uid="uid://b6bahvsonp6ns"]
 
 [ext_resource type="Script" path="res://level_select.gd" id="1_1t2aq"]
+[ext_resource type="Texture2D" uid="uid://8jb186poiccj" path="res://paintings/2.jpg" id="2_lkl01"]
+[ext_resource type="Texture2D" uid="uid://dhgejypktqinc" path="res://paintings/1.jpg" id="3_8vgw6"]
+[ext_resource type="Texture2D" uid="uid://d1eq06ejut7wt" path="res://paintings/3.jpg" id="4_jnvk2"]
+[ext_resource type="Texture2D" uid="uid://bp6posg4jv3h1" path="res://Pixel Art Padlock Pack - Animated/Small Square Padlock/BLACK/Sprites/Small Square Padlock - BLACK - 0000.png" id="5_1ix47"]
 
 [node name="LevelSelect" type="Node2D"]
 script = ExtResource("1_1t2aq")
@@ -12,72 +16,78 @@ color = Color(0.562247, 0.46981, 0.448851, 1)
 
 [node name="Button" type="Button" parent="."]
 unique_name_in_owner = true
-show_behind_parent = true
-offset_left = 57.0
-offset_top = 396.0
-offset_right = 74.0
-offset_bottom = 411.0
-scale = Vector2(16, 16)
+offset_left = 39.0
+offset_top = 365.0
+offset_right = 349.0
+offset_bottom = 655.0
 
 [node name="Button2" type="Button" parent="."]
 unique_name_in_owner = true
-show_behind_parent = true
-offset_left = 432.0
-offset_top = 396.0
-offset_right = 449.0
-offset_bottom = 411.0
-scale = Vector2(16, 16)
+offset_left = 400.0
+offset_top = 365.0
+offset_right = 729.0
+offset_bottom = 655.0
 
 [node name="Button3" type="Button" parent="."]
 unique_name_in_owner = true
-show_behind_parent = true
-offset_left = 789.0
-offset_top = 396.0
-offset_right = 806.0
-offset_bottom = 411.0
-scale = Vector2(16, 16)
+offset_left = 791.0
+offset_top = 365.0
+offset_right = 1114.0
+offset_bottom = 655.0
 
-[node name="lvl1_completed2" type="ColorRect" parent="."]
-offset_left = 39.0
+[node name="lvl1_completed" type="TextureRect" parent="."]
+visible = false
+offset_left = 55.0
 offset_top = 383.0
-offset_right = 348.0
-offset_bottom = 652.0
-color = Color(0.054902, 0.317647, 0.243137, 0.670588)
+offset_right = 333.0
+offset_bottom = 638.0
+texture = ExtResource("2_lkl01")
+expand_mode = 1
+stretch_mode = 6
 
-[node name="lvl2_completed" type="ColorRect" parent="."]
+[node name="lvl2_completed" type="TextureRect" parent="."]
+visible = false
 offset_left = 416.0
 offset_top = 383.0
-offset_right = 725.0
-offset_bottom = 652.0
-color = Color(0.054902, 0.317647, 0.243137, 0.670588)
+offset_right = 712.0
+offset_bottom = 638.0
+texture = ExtResource("3_8vgw6")
+expand_mode = 1
+stretch_mode = 6
 
-[node name="lvl3_completed" type="ColorRect" parent="."]
-offset_left = 772.0
-offset_top = 383.0
-offset_right = 1081.0
-offset_bottom = 652.0
-color = Color(0.0567323, 0.315807, 0.242617, 0.670588)
+[node name="lvl3_completed" type="TextureRect" parent="."]
+visible = false
+offset_left = 813.0
+offset_top = 385.0
+offset_right = 1093.0
+offset_bottom = 638.0
+texture = ExtResource("4_jnvk2")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="lvl1_locked" type="ColorRect" parent="."]
-offset_left = 39.0
+offset_left = 55.0
 offset_top = 383.0
-offset_right = 348.0
-offset_bottom = 652.0
-color = Color(0.502564, 0.0778279, 0.0386061, 0.670588)
+offset_right = 333.0
+offset_bottom = 638.0
+mouse_filter = 2
+color = Color(0.501961, 0.0784314, 0.0392157, 1)
 
 [node name="lvl2_locked" type="ColorRect" parent="."]
 offset_left = 416.0
 offset_top = 383.0
-offset_right = 725.0
-offset_bottom = 652.0
-color = Color(0.501961, 0.0784314, 0.0392157, 0.670588)
+offset_right = 712.0
+offset_bottom = 638.0
+mouse_filter = 2
+color = Color(0.501961, 0.0784314, 0.0392157, 1)
 
 [node name="lvl3_locked" type="ColorRect" parent="."]
-offset_left = 772.0
+offset_left = 813.0
 offset_top = 383.0
-offset_right = 1081.0
-offset_bottom = 652.0
-color = Color(0.501961, 0.0784314, 0.0392157, 0.670588)
+offset_right = 1093.0
+offset_bottom = 638.0
+mouse_filter = 2
+color = Color(0.501961, 0.0784314, 0.0392157, 1)
 
 [node name="Label" type="Label" parent="."]
 offset_left = 39.0
@@ -89,27 +99,39 @@ text = "Level Select"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 127.0
-offset_top = 284.0
+offset_top = 256.0
 offset_right = 181.0
-offset_bottom = 307.0
+offset_bottom = 279.0
 scale = Vector2(3, 3)
 text = "Level 1"
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 494.0
-offset_top = 296.0
-offset_right = 548.0
-offset_bottom = 319.0
+offset_left = 487.0
+offset_top = 256.0
+offset_right = 541.0
+offset_bottom = 279.0
 scale = Vector2(3, 3)
 text = "Level 2"
 
 [node name="Label4" type="Label" parent="."]
-offset_left = 842.0
-offset_top = 284.0
-offset_right = 896.0
-offset_bottom = 307.0
+offset_left = 883.0
+offset_top = 256.0
+offset_right = 937.0
+offset_bottom = 279.0
 scale = Vector2(3, 3)
 text = "Level 3"
+
+[node name="lock2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(564, 495)
+scale = Vector2(11, 11)
+texture = ExtResource("5_1ix47")
+
+[node name="lock3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 495)
+scale = Vector2(11, 11)
+texture = ExtResource("5_1ix47")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

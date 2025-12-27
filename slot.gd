@@ -1,7 +1,7 @@
 extends TextureRect
 @export var correct_id: String
-@export var level_1_path: NodePath
-@onready var level_1 = get_node(level_1_path)
+@export var level_path: NodePath
+@onready var level = get_node(level_path)
 @export var texture_rect_path: NodePath
 @onready var texture_rect = get_node(texture_rect_path)
 
@@ -37,4 +37,4 @@ func _drop_data(_pos, data):
 	texture =  data["origin_texture"]
 	if texture_rect.id == correct_id:
 		correct_piece = true
-	level_1.check_if_correct()
+	level.check_if_correct()

@@ -7,6 +7,8 @@ extends Node2D
 @onready var lvl_1_locked: ColorRect = $lvl1_locked
 @onready var lvl_3_locked: ColorRect = $lvl3_locked
 @onready var lvl_2_locked: ColorRect = $lvl2_locked
+@onready var lock_2: Sprite2D = $lock2
+@onready var lock_3: Sprite2D = $lock3
 
 
 
@@ -20,13 +22,17 @@ func _ready() -> void:
 		
 	if LevelCore.lvl2_completed == true:
 		lvl_2_locked.visible = false
+		lock_2.visible = false
 	if LevelCore.lvl2_completed == false:
 		lvl_2_locked.visible = true
-		
+		lock_2.visible = true
+	
 	if LevelCore.lvl3_completed == true:
 		lvl_3_locked.visible = false
+		lock_3.visible = false
 	if LevelCore.lvl3_completed == false:
 		lvl_3_locked.visible = true
+		lock_3.visible = true
 
 func _on_button_pressed() -> void:
 	if LevelCore.lvl1_completed == false:
