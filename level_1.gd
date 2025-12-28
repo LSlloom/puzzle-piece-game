@@ -7,13 +7,13 @@ func _ready() -> void:
 	Music.play_music_level()
 
 func check_if_correct():
-	for slot in get_children():
+	for slot in get_tree().get_nodes_in_group("puzzle_piece"):
 		if not slot.correct_piece:
 			return
 	print("puzzle solved")
 	CanvasLayer_node.visible = true
 	LevelCore.lvl1_completed = true
-	Music.play_music_level().stop()
+
 
 func _on_done_pressed() -> void:
 	get_tree().change_scene_to_file("res://level_select.tscn")

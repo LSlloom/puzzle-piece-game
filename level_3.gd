@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var CanvasLayer_node = get_node("../CanvasLayer")
+@onready var CanvasLayer_node = get_node("../../CanvasLayer")
 
 func _ready() -> void:
 	CanvasLayer_node.visible = false
@@ -8,13 +8,13 @@ func _ready() -> void:
 	pass
 
 func check_if_correct():
-	for slot in get_children():
+	for slot in get_tree().get_nodes_in_group("puzzle_piece"):
 		if not slot.correct_piece:
 			return
 	print("puzzle solved")
 	CanvasLayer_node.visible = true
 	LevelCore.lvl3_completed = true
-	Music.play_music_level().stop()
+
 
 
 func _on_done_pressed() -> void:
