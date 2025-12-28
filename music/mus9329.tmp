@@ -1,0 +1,29 @@
+[gd_scene load_steps=12 format=3 uid="uid://1ie7awnuhghq"]
+
+[ext_resource type="AudioStream" uid="uid://digxu574oq2n5" path="res://music/Classicals.de - Aguado, Dionisio - 8 Lessons for the Guitar - No. 2 in A minor.mp3" id="1_go1hc"]
+[ext_resource type="AudioStream" uid="uid://c0e8i28247xf8" path="res://music/Classicals.de - Aguado, Dionisio - Introduction and Rondo, Op. 2, No. 2.mp3" id="2_gbgvn"]
+[ext_resource type="AudioStream" uid="uid://custi0ilacy1e" path="res://music/Classicals.de - Beethoven - Fu╠êr Elise - Bagatelle No. 25 in A Minor, WoO 59.mp3" id="3_c5bhq"]
+[ext_resource type="AudioStream" uid="uid://bhjtmhgqqf43j" path="res://music/Classicals.de - Gershwin - Rhapsody in Blue - Arranged for 2 Pianos (1924 Version).mp3" id="4_o3dgl"]
+[ext_resource type="AudioStream" uid="uid://d3knysdaqilyw" path="res://music/Classicals.de - Giuliani, Mauro - Six Variations sur les Folies d'Espagne (1811) - Op. 45.mp3" id="5_7n3uq"]
+[ext_resource type="AudioStream" uid="uid://yin57eh05utf" path="res://music/Classicals.de - Granados - 12 Danzas espanolas - No. 5,  Andaluza.mp3" id="6_guda7"]
+[ext_resource type="AudioStream" uid="uid://bdrcbmt1fkuqb" path="res://music/Classicals.de - Paganini - Sonata No. 33 - MS 84 - Arranged for Guitar.mp3" id="7_r52w6"]
+[ext_resource type="AudioStream" uid="uid://uo3m3ilt3mc3" path="res://music/Classicals.de+-+Vivaldi+-+Il+Capraro+Che+Dorme+(The+Four+Seasons+_+Spring+_+II.+Largo+_+RV+269)+-+Arranged+for+Guitar.mp3" id="8_cwm3m"]
+[ext_resource type="AudioStream" uid="uid://dr7vlnr6ogqmi" path="res://music/Classicals.de-Bach-Air-on-the-G-String-BWV-1068-Arranged-for-Piano.mp3" id="9_ul2a6"]
+[ext_resource type="Script" path="res://music/music.gd" id="10_8ehpr"]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_5a4aw"]
+shuffle = true
+stream_count = 9
+stream_0 = ExtResource("1_go1hc")
+stream_1 = ExtResource("2_gbgvn")
+stream_2 = ExtResource("3_c5bhq")
+stream_3 = ExtResource("4_o3dgl")
+stream_4 = ExtResource("5_7n3uq")
+stream_5 = ExtResource("6_guda7")
+stream_6 = ExtResource("7_r52w6")
+stream_7 = ExtResource("8_cwm3m")
+stream_8 = ExtResource("9_ul2a6")
+
+[node name="Music" type="AudioStreamPlayer2D"]
+stream = SubResource("AudioStreamPlaylist_5a4aw")
+script = ExtResource("10_8ehpr")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://custi0ilacy1e"
+path="res://.godot/imported/Classicals.de - Beethoven - Fu╠êr Elise - Bagatelle No. 25 in A Minor, WoO 59.mp3-2c4cf69f8c3363b76e1a1b45a763d8ff.mp3str"
+
+[deps]
+
+source_file="res://music/Classicals.de - Beethoven - Fu╠êr Elise - Bagatelle No. 25 in A Minor, WoO 59.mp3"
+dest_files=["res://.godot/imported/Classicals.de - Beethoven - Fu╠êr Elise - Bagatelle No. 25 in A Minor, WoO 59.mp3-2c4cf69f8c3363b76e1a1b45a763d8ff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

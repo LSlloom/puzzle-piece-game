@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://digxu574oq2n5"
+path="res://.godot/imported/Classicals.de - Aguado, Dionisio - 8 Lessons for the Guitar - No. 2 in A minor.mp3-a31c946d506d738155b49218fb179252.mp3str"
+
+[deps]
+
+source_file="res://music/Classicals.de - Aguado, Dionisio - 8 Lessons for the Guitar - No. 2 in A minor.mp3"
+dest_files=["res://.godot/imported/Classicals.de - Aguado, Dionisio - 8 Lessons for the Guitar - No. 2 in A minor.mp3-a31c946d506d738155b49218fb179252.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

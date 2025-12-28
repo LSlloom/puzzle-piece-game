@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3knysdaqilyw"
+path="res://.godot/imported/Classicals.de - Giuliani, Mauro - Six Variations sur les Folies d'Espagne (1811) - Op. 45.mp3-a16afbe45575d08b731dcac8db4f24c4.mp3str"
+
+[deps]
+
+source_file="res://music/Classicals.de - Giuliani, Mauro - Six Variations sur les Folies d'Espagne (1811) - Op. 45.mp3"
+dest_files=["res://.godot/imported/Classicals.de - Giuliani, Mauro - Six Variations sur les Folies d'Espagne (1811) - Op. 45.mp3-a16afbe45575d08b731dcac8db4f24c4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

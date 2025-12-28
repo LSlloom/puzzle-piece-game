@@ -4,7 +4,7 @@ extends Node2D
 
 func _ready() -> void:
 	CanvasLayer_node.visible = false
-		
+	Music.play_music_level()
 
 func check_if_correct():
 	for slot in get_children():
@@ -13,7 +13,7 @@ func check_if_correct():
 	print("puzzle solved")
 	CanvasLayer_node.visible = true
 	LevelCore.lvl1_completed = true
-
+	Music.play_music_level().stop()
 
 func _on_done_pressed() -> void:
 	get_tree().change_scene_to_file("res://level_select.tscn")
