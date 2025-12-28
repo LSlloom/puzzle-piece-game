@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bm3hp4exr04gp"]
+[gd_scene load_steps=28 format=3 uid="uid://bm3hp4exr04gp"]
 
 [ext_resource type="PackedScene" uid="uid://bf17gihkqloob" path="res://texture_rect.tscn" id="1_v14ym"]
 [ext_resource type="Texture2D" uid="uid://b2qr2ioa8u45j" path="res://paintings/birds/row-1-column-1.jpg" id="2_y5tne"]
@@ -25,15 +25,16 @@
 [ext_resource type="Script" path="res://slot.gd" id="23_kgr4j"]
 [ext_resource type="Script" path="res://reset.gd" id="24_dlj7d"]
 [ext_resource type="Texture2D" uid="uid://j32go4xdxup8" path="res://pixil-frame-0 (4).png" id="25_wfgof"]
-[ext_resource type="Texture2D" uid="uid://d1eq06ejut7wt" path="res://paintings/3.jpg" id="26_5pa1p"]
+[ext_resource type="Texture2D" uid="uid://d1eq06ejut7wt" path="res://paintings/birds/3.jpg" id="26_5pa1p"]
+[ext_resource type="PackedScene" uid="uid://dbcd6e6fkwcs2" path="res://return.tscn" id="27_oq6wt"]
 
 [node name="level_3" type="Node2D"]
 
 [node name="Reset" type="Button" parent="."]
-offset_left = 31.0
-offset_top = 730.0
-offset_right = 181.0
-offset_bottom = 787.0
+offset_left = 49.0
+offset_top = 734.0
+offset_right = 199.0
+offset_bottom = 791.0
 script = ExtResource("24_dlj7d")
 
 [node name="Label" type="Label" parent="Reset"]
@@ -97,17 +98,19 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("26_5pa1p")
 
 [node name="Control" type="Control" parent="."]
+z_index = -1
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1165.0
 offset_bottom = 1512.0
+mouse_filter = 2
 
-[node name="slots" type="Node2D" parent="Control"]
+[node name="slots" type="Node2D" parent="."]
 position = Vector2(84, -344)
 scale = Vector2(2, 2)
 script = ExtResource("22_6xcvp")
 
-[node name="slot" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 95.5
 offset_top = 222.0
 offset_right = 164.5
@@ -117,7 +120,7 @@ correct_id = "1"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect")
 
-[node name="slot2" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot2" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 303.0
 offset_top = 494.0
 offset_right = 372.0
@@ -127,7 +130,7 @@ correct_id = "20"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect20")
 
-[node name="slot3" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot3" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 234.0
 offset_top = 494.0
 offset_right = 303.0
@@ -137,7 +140,7 @@ correct_id = "19"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect19")
 
-[node name="slot4" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot4" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 164.5
 offset_top = 494.0
 offset_right = 233.5
@@ -147,7 +150,7 @@ correct_id = "18"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect18")
 
-[node name="slot5" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot5" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 95.5
 offset_top = 494.0
 offset_right = 164.5
@@ -157,7 +160,7 @@ correct_id = "17"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect17")
 
-[node name="slot6" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot6" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 303.0
 offset_top = 426.0
 offset_right = 372.0
@@ -167,7 +170,7 @@ correct_id = "16"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect16")
 
-[node name="slot7" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot7" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 234.0
 offset_top = 426.0
 offset_right = 303.0
@@ -177,7 +180,7 @@ correct_id = "15"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect15")
 
-[node name="slot8" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot8" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 165.0
 offset_top = 426.0
 offset_right = 234.0
@@ -187,7 +190,7 @@ correct_id = "14"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect14")
 
-[node name="slot9" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot9" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 303.0
 offset_top = 358.0
 offset_right = 372.0
@@ -197,7 +200,7 @@ correct_id = "12"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect12")
 
-[node name="slot10" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot10" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 234.0
 offset_top = 358.0
 offset_right = 303.0
@@ -207,7 +210,7 @@ correct_id = "11"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect11")
 
-[node name="slot11" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot11" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 164.5
 offset_top = 358.0
 offset_right = 233.5
@@ -217,7 +220,7 @@ correct_id = "10"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect10")
 
-[node name="slot12" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot12" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 95.5
 offset_top = 426.0
 offset_right = 164.5
@@ -227,7 +230,7 @@ correct_id = "13"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect13")
 
-[node name="slot13" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot13" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 95.5
 offset_top = 358.0
 offset_right = 164.5
@@ -237,7 +240,7 @@ correct_id = "9"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect9")
 
-[node name="slot14" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot14" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 303.0
 offset_top = 290.0
 offset_right = 372.0
@@ -247,7 +250,7 @@ correct_id = "8"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect8")
 
-[node name="slot15" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot15" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 234.0
 offset_top = 290.0
 offset_right = 303.0
@@ -257,7 +260,7 @@ correct_id = "7"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect7")
 
-[node name="slot16" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot16" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 165.0
 offset_top = 290.0
 offset_right = 234.0
@@ -267,7 +270,7 @@ correct_id = "6"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect6")
 
-[node name="slot17" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot17" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 95.5
 offset_top = 290.0
 offset_right = 164.5
@@ -277,7 +280,7 @@ correct_id = "5"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect5")
 
-[node name="slot18" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot18" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 303.0
 offset_top = 222.0
 offset_right = 372.0
@@ -287,7 +290,7 @@ correct_id = "4"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect4")
 
-[node name="slot19" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot19" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 234.0
 offset_top = 222.0
 offset_right = 303.0
@@ -297,7 +300,7 @@ correct_id = "3"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect3")
 
-[node name="slot20" parent="Control/slots" instance=ExtResource("1_v14ym")]
+[node name="slot20" parent="slots" instance=ExtResource("1_v14ym")]
 offset_left = 165.0
 offset_top = 222.0
 offset_right = 234.0
@@ -307,11 +310,11 @@ correct_id = "2"
 level_path = NodePath("..")
 texture_rect_path = NodePath("../../pieces/TextureRect2")
 
-[node name="pieces" type="Node2D" parent="Control"]
+[node name="pieces" type="Node2D" parent="."]
 position = Vector2(-346, -274)
 scale = Vector2(2, 2)
 
-[node name="TextureRect" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 345.0
 offset_top = 578.0
 offset_right = 413.9
@@ -319,7 +322,7 @@ offset_bottom = 646.0
 texture = ExtResource("2_y5tne")
 id = "1"
 
-[node name="TextureRect2" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect2" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 552.0
 offset_top = 714.0
 offset_right = 620.9
@@ -327,7 +330,7 @@ offset_bottom = 782.0
 texture = ExtResource("3_b5ikc")
 id = "2"
 
-[node name="TextureRect3" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect3" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 483.0
 offset_top = 578.0
 offset_right = 551.9
@@ -335,7 +338,7 @@ offset_bottom = 646.0
 texture = ExtResource("4_33416")
 id = "3"
 
-[node name="TextureRect4" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect4" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 552.0
 offset_top = 578.0
 offset_right = 620.9
@@ -343,7 +346,7 @@ offset_bottom = 646.0
 texture = ExtResource("5_3yjqg")
 id = "4"
 
-[node name="TextureRect5" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect5" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 276.0
 offset_top = 578.0
 offset_right = 344.9
@@ -351,7 +354,7 @@ offset_bottom = 646.0
 texture = ExtResource("6_idd1q")
 id = "5"
 
-[node name="TextureRect6" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect6" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 276.0
 offset_top = 646.0
 offset_right = 344.9
@@ -359,7 +362,7 @@ offset_bottom = 714.0
 texture = ExtResource("7_nbenq")
 id = "6"
 
-[node name="TextureRect7" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect7" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 483.0
 offset_top = 646.0
 offset_right = 551.9
@@ -367,7 +370,7 @@ offset_bottom = 714.0
 texture = ExtResource("8_307vy")
 id = "7"
 
-[node name="TextureRect8" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect8" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 414.0
 offset_top = 578.0
 offset_right = 482.9
@@ -375,7 +378,7 @@ offset_bottom = 646.0
 texture = ExtResource("9_qk37w")
 id = "8"
 
-[node name="TextureRect9" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect9" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 345.0
 offset_top = 646.0
 offset_right = 413.9
@@ -383,7 +386,7 @@ offset_bottom = 714.0
 texture = ExtResource("10_j5jqh")
 id = "9"
 
-[node name="TextureRect10" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect10" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 414.0
 offset_top = 646.0
 offset_right = 482.9
@@ -391,7 +394,7 @@ offset_bottom = 714.0
 texture = ExtResource("11_0hbik")
 id = "10"
 
-[node name="TextureRect11" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect11" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 552.0
 offset_top = 646.0
 offset_right = 620.9
@@ -399,7 +402,7 @@ offset_bottom = 714.0
 texture = ExtResource("12_bb1hy")
 id = "11"
 
-[node name="TextureRect12" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect12" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 483.0
 offset_top = 782.0
 offset_right = 551.9
@@ -407,7 +410,7 @@ offset_bottom = 850.0
 texture = ExtResource("13_vqlq5")
 id = "12"
 
-[node name="TextureRect13" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect13" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 483.0
 offset_top = 714.0
 offset_right = 552.0
@@ -415,7 +418,7 @@ offset_bottom = 782.0
 texture = ExtResource("14_gbgv5")
 id = "13"
 
-[node name="TextureRect14" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect14" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 345.0
 offset_top = 714.0
 offset_right = 413.9
@@ -423,7 +426,7 @@ offset_bottom = 782.0
 texture = ExtResource("15_0dj7k")
 id = "14"
 
-[node name="TextureRect15" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect15" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 276.0
 offset_top = 782.0
 offset_right = 344.9
@@ -431,7 +434,7 @@ offset_bottom = 850.0
 texture = ExtResource("16_6fygt")
 id = "15"
 
-[node name="TextureRect16" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect16" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 345.0
 offset_top = 782.0
 offset_right = 413.9
@@ -439,7 +442,7 @@ offset_bottom = 850.0
 texture = ExtResource("17_a4cdu")
 id = "16"
 
-[node name="TextureRect17" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect17" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 414.0
 offset_top = 782.0
 offset_right = 482.9
@@ -447,7 +450,7 @@ offset_bottom = 850.0
 texture = ExtResource("18_cx10a")
 id = "17"
 
-[node name="TextureRect18" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect18" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 414.0
 offset_top = 714.0
 offset_right = 482.9
@@ -455,7 +458,7 @@ offset_bottom = 782.0
 texture = ExtResource("19_3bd4s")
 id = "18"
 
-[node name="TextureRect19" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect19" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 276.0
 offset_top = 714.0
 offset_right = 344.9
@@ -463,7 +466,7 @@ offset_bottom = 782.0
 texture = ExtResource("20_4d2k0")
 id = "19"
 
-[node name="TextureRect20" parent="Control/pieces" instance=ExtResource("1_v14ym")]
+[node name="TextureRect20" parent="pieces" instance=ExtResource("1_v14ym")]
 offset_left = 552.0
 offset_top = 782.0
 offset_right = 620.9
@@ -471,5 +474,11 @@ offset_bottom = 850.0
 texture = ExtResource("21_oxysj")
 id = "20"
 
+[node name="Done2" parent="." instance=ExtResource("27_oq6wt")]
+offset_left = 49.0
+offset_top = 657.0
+offset_right = 199.0
+offset_bottom = 719.0
+
 [connection signal="pressed" from="Reset" to="Reset" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/Done" to="Control/slots" method="_on_done_pressed"]
+[connection signal="pressed" from="CanvasLayer/Done" to="slots" method="_on_done_pressed"]

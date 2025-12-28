@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://dd831tcu1o1ph"]
+[gd_scene load_steps=28 format=3 uid="uid://dd831tcu1o1ph"]
 
 [ext_resource type="PackedScene" uid="uid://bf17gihkqloob" path="res://texture_rect.tscn" id="1_0f6xm"]
 [ext_resource type="Script" path="res://level_1.gd" id="1_bkmtj"]
@@ -25,7 +25,8 @@
 [ext_resource type="Texture2D" uid="uid://j32go4xdxup8" path="res://pixil-frame-0 (4).png" id="22_l0v54"]
 [ext_resource type="Script" path="res://reset.gd" id="23_g57bm"]
 [ext_resource type="Script" path="res://slot.gd" id="24_01qlv"]
-[ext_resource type="Texture2D" uid="uid://8jb186poiccj" path="res://paintings/2.jpg" id="26_4uxwl"]
+[ext_resource type="Texture2D" uid="uid://8jb186poiccj" path="res://paintings/laundry/2.jpg" id="26_4uxwl"]
+[ext_resource type="PackedScene" uid="uid://dbcd6e6fkwcs2" path="res://return.tscn" id="27_16a32"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -36,10 +37,10 @@ scale = Vector2(33.9167, 35.3542)
 texture = ExtResource("22_l0v54")
 
 [node name="Reset" type="Button" parent="."]
-offset_left = 31.0
-offset_top = 730.0
-offset_right = 181.0
-offset_bottom = 787.0
+offset_left = 35.0
+offset_top = 734.0
+offset_right = 185.0
+offset_bottom = 791.0
 script = ExtResource("23_g57bm")
 
 [node name="Label" type="Label" parent="Reset"]
@@ -53,6 +54,7 @@ scale = Vector2(2, 2)
 text = "RESET"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 offset_left = 35.0
@@ -470,6 +472,12 @@ offset_right = 620.9
 offset_bottom = 850.0
 texture = ExtResource("21_wddfy")
 id = "20"
+
+[node name="Done" parent="." instance=ExtResource("27_16a32")]
+offset_left = 35.0
+offset_top = 663.0
+offset_right = 185.0
+offset_bottom = 725.0
 
 [connection signal="pressed" from="Reset" to="Reset" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Done" to="level_1_slots" method="_on_done_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhgejypktqinc"
-path="res://.godot/imported/1.jpg-dd0a57858b5f1ba5a7f1a6f1789d9801.ctex"
+uid="uid://1a2t0rjhirls"
+path="res://.godot/imported/row-3-column-3.jpg-9ae523aa7ce83c1b5848bd8b320a44f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://paintings/1.jpg"
-dest_files=["res://.godot/imported/1.jpg-dd0a57858b5f1ba5a7f1a6f1789d9801.ctex"]
+source_file="res://paintings/flowers/row-3-column-3.jpg"
+dest_files=["res://.godot/imported/row-3-column-3.jpg-9ae523aa7ce83c1b5848bd8b320a44f2.ctex"]
 
 [params]
 

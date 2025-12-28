@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbcd6e6fkwcs2"]
+
+[ext_resource type="Script" path="res://return.gd" id="1_ndr3h"]
+
+[node name="return" type="Button"]
+offset_left = 24.0
+offset_top = 705.0
+offset_right = 174.0
+offset_bottom = 767.0
+script = ExtResource("1_ndr3h")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 78.0
+offset_bottom = 31.0
+scale = Vector2(2, 2)
+text = "RETURN"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

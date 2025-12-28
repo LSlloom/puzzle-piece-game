@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var CanvasLayer_node = get_node("../../CanvasLayer")
+@onready var CanvasLayer_node = get_node("../CanvasLayer")
 
 func _ready() -> void:
 	CanvasLayer_node.visible = false
