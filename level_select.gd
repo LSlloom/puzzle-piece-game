@@ -17,22 +17,23 @@ func _ready() -> void:
 	
 	if LevelCore.lvl1_completed == true:
 		lvl_1_locked.visible = false
+		lock_2.visible = false
 	if LevelCore.lvl1_completed == false:
 		lvl_1_locked.visible = true
+		lock_2.visible = true
 		
 	if LevelCore.lvl2_completed == true:
 		lvl_2_locked.visible = false
-		lock_2.visible = false
+		lock_3.visible = false
 	if LevelCore.lvl2_completed == false:
 		lvl_2_locked.visible = true
-		lock_2.visible = true
+		lock_3.visible = true
 	
 	if LevelCore.lvl3_completed == true:
 		lvl_3_locked.visible = false
-		lock_3.visible = false
 	if LevelCore.lvl3_completed == false:
 		lvl_3_locked.visible = true
-		lock_3.visible = true
+
 
 func _on_button_pressed() -> void:
 	if LevelCore.lvl1_completed == false:

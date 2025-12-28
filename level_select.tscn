@@ -36,31 +36,31 @@ offset_right = 1114.0
 offset_bottom = 655.0
 
 [node name="lvl1_completed" type="TextureRect" parent="."]
-visible = false
 offset_left = 55.0
 offset_top = 383.0
 offset_right = 333.0
 offset_bottom = 638.0
+mouse_filter = 2
 texture = ExtResource("2_lkl01")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="lvl2_completed" type="TextureRect" parent="."]
-visible = false
 offset_left = 416.0
 offset_top = 383.0
 offset_right = 712.0
 offset_bottom = 638.0
+mouse_filter = 2
 texture = ExtResource("3_8vgw6")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="lvl3_completed" type="TextureRect" parent="."]
-visible = false
 offset_left = 813.0
 offset_top = 385.0
 offset_right = 1093.0
 offset_bottom = 638.0
+mouse_filter = 2
 texture = ExtResource("4_jnvk2")
 expand_mode = 1
 stretch_mode = 6

@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://iu1yr01oed5k"]
+[gd_scene load_steps=27 format=3 uid="uid://iu1yr01oed5k"]
 
 [ext_resource type="PackedScene" uid="uid://bf17gihkqloob" path="res://texture_rect.tscn" id="1_wgpea"]
 [ext_resource type="Texture2D" uid="uid://d2yptj0bv78wn" path="res://paintings/window/row-1-column-3.jpg" id="2_8rsrq"]
@@ -25,6 +25,7 @@
 [ext_resource type="Script" path="res://reset.gd" id="23_8t2bu"]
 [ext_resource type="Script" path="res://slot.gd" id="23_s6sqp"]
 [ext_resource type="Texture2D" uid="uid://j32go4xdxup8" path="res://pixil-frame-0 (4).png" id="24_5xj0s"]
+[ext_resource type="Texture2D" uid="uid://dhgejypktqinc" path="res://paintings/1.jpg" id="26_j3gym"]
 
 [node name="level_2" type="Node2D"]
 
@@ -429,23 +430,23 @@ offset_left = 35.0
 offset_top = 40.0
 offset_right = 1126.0
 offset_bottom = 1452.0
-color = Color(0.803922, 0.552941, 0.298039, 1)
+color = Color(0.560784, 0.470588, 0.447059, 1)
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 texture_filter = 1
-offset_left = -374.0
-offset_top = 225.0
-offset_right = -52.0
-offset_bottom = 286.0
+offset_left = -382.0
+offset_top = 84.0
+offset_right = -60.0
+offset_bottom = 145.0
 scale = Vector2(6, 6)
 text = "PUZZLE COMPLETED"
 horizontal_alignment = 1
 
 [node name="Done" type="Button" parent="CanvasLayer"]
 offset_left = 348.0
-offset_top = 493.0
+offset_top = 1209.0
 offset_right = 569.0
-offset_bottom = 570.0
+offset_bottom = 1286.0
 scale = Vector2(2, 2)
 metadata/_edit_group_ = true
 
@@ -458,6 +459,11 @@ offset_right = 115.0
 offset_bottom = 78.0
 scale = Vector2(2, 2)
 text = "RETURN"
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(582, 708)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("26_j3gym")
 
 [connection signal="pressed" from="Reset" to="Reset" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Done" to="slots" method="_on_done_pressed"]

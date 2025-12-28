@@ -13,7 +13,7 @@ func check_if_correct():
 			return
 	print("puzzle solved")
 	CanvasLayer_node.visible = true
-	LevelCore.lvl2_completed = true
+	LevelCore.lvl3_completed = true
 
 
 func _on_done_pressed() -> void:
