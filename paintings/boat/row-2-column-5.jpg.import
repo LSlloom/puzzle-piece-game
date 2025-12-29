@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tdkjpeqg66n2"
-path="res://.godot/imported/row-5-column-1.jpg-65689ecf92e301d90c78ddd64efa092c.ctex"
+uid="uid://ckmjs7nncn18p"
+path="res://.godot/imported/row-2-column-5.jpg-f42623d08d125f8f6fd00ad9fc4d8729.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://paintings/boat/row-5-column-1.jpg"
-dest_files=["res://.godot/imported/row-5-column-1.jpg-65689ecf92e301d90c78ddd64efa092c.ctex"]
+source_file="res://paintings/boat/row-2-column-5.jpg"
+dest_files=["res://.godot/imported/row-2-column-5.jpg-f42623d08d125f8f6fd00ad9fc4d8729.ctex"]
 
 [params]
 

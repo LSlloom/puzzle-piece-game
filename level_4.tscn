@@ -1,31 +1,33 @@
 [gd_scene load_steps=27 format=3 uid="uid://d0pee2sp1wnn6"]
 
 [ext_resource type="Script" path="res://reset.gd" id="1_w4gkw"]
-[ext_resource type="Texture2D" uid="uid://d1eq06ejut7wt" path="res://paintings/birds/3.jpg" id="3_orhhr"]
+[ext_resource type="Texture2D" uid="uid://ooy50cwpg6hq" path="res://paintings/boat/1927.1984_print.jpg" id="2_3p3d6"]
 [ext_resource type="Script" path="res://level_3.gd" id="4_8x7f5"]
 [ext_resource type="PackedScene" uid="uid://bf17gihkqloob" path="res://texture_rect.tscn" id="5_vwima"]
 [ext_resource type="Script" path="res://slot.gd" id="6_dpxl4"]
-[ext_resource type="Texture2D" uid="uid://dxvx8o2jrthla" path="res://paintings/boat/row-1-column-1.jpg" id="7_02l5l"]
-[ext_resource type="Texture2D" uid="uid://b051nyrsjlg7j" path="res://paintings/boat/row-1-column-2.jpg" id="8_2cgs7"]
-[ext_resource type="Texture2D" uid="uid://cgwt5oxpxmnv1" path="res://paintings/boat/row-1-column-3.jpg" id="9_1ltus"]
-[ext_resource type="Texture2D" uid="uid://ct2at0iplsfro" path="res://paintings/boat/row-1-column-4.jpg" id="10_ax504"]
-[ext_resource type="Texture2D" uid="uid://b8duhia3kggmv" path="res://paintings/boat/row-2-column-3.jpg" id="11_uftr1"]
-[ext_resource type="Texture2D" uid="uid://dtykh22nkeh0n" path="res://paintings/boat/row-2-column-2.jpg" id="12_cphhc"]
-[ext_resource type="Texture2D" uid="uid://c3v0dponuwbrw" path="res://paintings/boat/row-2-column-1.jpg" id="13_uehtq"]
-[ext_resource type="Texture2D" uid="uid://bbmwhk1bpiuwy" path="res://paintings/boat/row-2-column-4.jpg" id="14_ao2s1"]
-[ext_resource type="Texture2D" uid="uid://ccsbwcnybhra8" path="res://paintings/boat/row-3-column-1.jpg" id="15_t6s48"]
-[ext_resource type="Texture2D" uid="uid://dvaxlrelo3l3b" path="res://paintings/boat/row-3-column-2.jpg" id="16_o8ug5"]
-[ext_resource type="Texture2D" uid="uid://8yr68j777cv1" path="res://paintings/boat/row-3-column-3.jpg" id="17_qwk7q"]
-[ext_resource type="Texture2D" uid="uid://wbsa8u2lbwsq" path="res://paintings/boat/row-3-column-4.jpg" id="18_qvn7r"]
-[ext_resource type="Texture2D" uid="uid://cppny4ix5mueu" path="res://paintings/boat/row-4-column-1.jpg" id="19_lixwo"]
-[ext_resource type="Texture2D" uid="uid://owuogcxo5ytf" path="res://paintings/boat/row-4-column-2.jpg" id="20_ljca0"]
-[ext_resource type="Texture2D" uid="uid://kf4fx5thnkke" path="res://paintings/boat/row-4-column-3.jpg" id="21_ydx1k"]
-[ext_resource type="Texture2D" uid="uid://dviefllbsowto" path="res://paintings/boat/row-4-column-4.jpg" id="22_qw6a6"]
-[ext_resource type="Texture2D" uid="uid://tdkjpeqg66n2" path="res://paintings/boat/row-5-column-1.jpg" id="23_82kot"]
-[ext_resource type="Texture2D" uid="uid://fj4dft8eccay" path="res://paintings/boat/row-5-column-2.jpg" id="24_vvs82"]
-[ext_resource type="Texture2D" uid="uid://d3a5yg6k2d226" path="res://paintings/boat/row-5-column-3.jpg" id="25_a24hl"]
-[ext_resource type="Texture2D" uid="uid://dyxwqvyo2m36c" path="res://paintings/boat/row-5-column-4.jpg" id="26_vo2ue"]
+[ext_resource type="Texture2D" uid="uid://cjbkvd13n4j2e" path="res://paintings/boat/row-1-column-1.jpg" id="7_02l5l"]
+[ext_resource type="Texture2D" uid="uid://ddfmctjlx0nfa" path="res://paintings/boat/row-1-column-2.jpg" id="8_2cgs7"]
+[ext_resource type="Texture2D" uid="uid://dcne7v1dgrypv" path="res://paintings/boat/row-1-column-3.jpg" id="9_1ltus"]
+[ext_resource type="Texture2D" uid="uid://b1l1llnsld1xb" path="res://paintings/boat/row-4-column-5.jpg" id="9_5i50y"]
+[ext_resource type="Texture2D" uid="uid://j486tbvikvkt" path="res://paintings/boat/row-1-column-5.jpg" id="10_hk3yt"]
+[ext_resource type="Texture2D" uid="uid://b3mrljc213rxg" path="res://paintings/boat/row-2-column-3.jpg" id="11_uftr1"]
+[ext_resource type="Texture2D" uid="uid://bn1uqn3xsi4cx" path="res://paintings/boat/row-2-column-2.jpg" id="12_cphhc"]
+[ext_resource type="Texture2D" uid="uid://bv14pr3yuxxac" path="res://paintings/boat/row-2-column-1.jpg" id="13_uehtq"]
+[ext_resource type="Texture2D" uid="uid://cmn18fyuwux10" path="res://paintings/boat/row-2-column-4.jpg" id="14_ao2s1"]
+[ext_resource type="Texture2D" uid="uid://ckmjs7nncn18p" path="res://paintings/boat/row-2-column-5.jpg" id="15_6v7ms"]
+[ext_resource type="Texture2D" uid="uid://bbyt045s12qct" path="res://paintings/boat/row-3-column-1.jpg" id="15_t6s48"]
+[ext_resource type="Texture2D" uid="uid://c3eckiimeavem" path="res://paintings/boat/row-3-column-2.jpg" id="16_o8ug5"]
+[ext_resource type="Texture2D" uid="uid://cwp22egxt6h5" path="res://paintings/boat/row-3-column-3.jpg" id="17_qwk7q"]
+[ext_resource type="Texture2D" uid="uid://dpinu0ssxqykt" path="res://paintings/boat/row-3-column-4.jpg" id="18_qvn7r"]
+[ext_resource type="Texture2D" uid="uid://b1hw5gnthpdiv" path="res://paintings/boat/row-4-column-1.jpg" id="19_lixwo"]
+[ext_resource type="Texture2D" uid="uid://p2c5d2ffr3s" path="res://paintings/boat/row-4-column-2.jpg" id="20_ljca0"]
+[ext_resource type="Texture2D" uid="uid://cq0f8h8r1fbmd" path="res://paintings/boat/row-3-column-5.jpg" id="20_tlbc5"]
+[ext_resource type="Texture2D" uid="uid://c2kf7j6lampbj" path="res://paintings/boat/row-4-column-3.jpg" id="21_ydx1k"]
+[ext_resource type="Texture2D" uid="uid://cc5lql10ngepa" path="res://paintings/boat/row-4-column-4.jpg" id="22_qw6a6"]
 [ext_resource type="PackedScene" uid="uid://dbcd6e6fkwcs2" path="res://return.tscn" id="27_gk0yl"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kqios"]
+load_path = "res://.godot/imported/row-1-column-4.jpg-61dda53abc67d19232c0502343dd77d7.ctex"
 
 [node name="level_4" type="Node2D"]
 
@@ -47,13 +49,12 @@ scale = Vector2(2, 2)
 text = "RESET"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-offset_left = 35.0
+offset_left = 6.0
 offset_top = 40.0
-offset_right = 1126.0
-offset_bottom = 1452.0
+offset_right = 1162.0
+offset_bottom = 1501.0
 color = Color(0.560784, 0.470588, 0.447059, 1)
 
 [node name="Label" type="Label" parent="CanvasLayer"]
@@ -87,12 +88,13 @@ text = "RETURN"
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(585, 643)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("3_orhhr")
+texture = ExtResource("2_3p3d6")
 
 [node name="Control" type="Control" parent="."]
 z_index = -1
 layout_mode = 3
 anchors_preset = 0
+offset_left = -13.0
 offset_right = 1165.0
 offset_bottom = 1512.0
 mouse_filter = 2
@@ -103,14 +105,14 @@ scale = Vector2(2, 2)
 script = ExtResource("4_8x7f5")
 
 [node name="slot" parent="slots" instance=ExtResource("5_vwima")]
-offset_left = 95.5
-offset_top = 222.0
-offset_right = 164.5
-offset_bottom = 290.0
+offset_left = 372.0
+offset_top = 290.0
+offset_right = 441.0
+offset_bottom = 358.0
 script = ExtResource("6_dpxl4")
-correct_id = "1"
+correct_id = "5"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect")
+texture_rect_path = NodePath("../../pieces/TextureRect5")
 
 [node name="slot2" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 303.0
@@ -118,9 +120,9 @@ offset_top = 494.0
 offset_right = 372.0
 offset_bottom = 562.0
 script = ExtResource("6_dpxl4")
-correct_id = "20"
+correct_id = "19"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect20")
+texture_rect_path = NodePath("../../pieces/TextureRect19")
 
 [node name="slot3" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 234.0
@@ -128,9 +130,9 @@ offset_top = 494.0
 offset_right = 303.0
 offset_bottom = 562.0
 script = ExtResource("6_dpxl4")
-correct_id = "19"
+correct_id = "18"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect19")
+texture_rect_path = NodePath("../../pieces/TextureRect18")
 
 [node name="slot4" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 164.5
@@ -138,9 +140,9 @@ offset_top = 494.0
 offset_right = 233.5
 offset_bottom = 562.0
 script = ExtResource("6_dpxl4")
-correct_id = "18"
+correct_id = "17"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect18")
+texture_rect_path = NodePath("../../pieces/TextureRect17")
 
 [node name="slot5" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 95.5
@@ -148,9 +150,9 @@ offset_top = 494.0
 offset_right = 164.5
 offset_bottom = 562.0
 script = ExtResource("6_dpxl4")
-correct_id = "17"
+correct_id = "16"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect17")
+texture_rect_path = NodePath("../../pieces/TextureRect16")
 
 [node name="slot6" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 303.0
@@ -158,9 +160,9 @@ offset_top = 426.0
 offset_right = 372.0
 offset_bottom = 494.0
 script = ExtResource("6_dpxl4")
-correct_id = "16"
+correct_id = "14"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect16")
+texture_rect_path = NodePath("../../pieces/TextureRect14")
 
 [node name="slot7" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 234.0
@@ -168,9 +170,9 @@ offset_top = 426.0
 offset_right = 303.0
 offset_bottom = 494.0
 script = ExtResource("6_dpxl4")
-correct_id = "15"
+correct_id = "13"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect15")
+texture_rect_path = NodePath("../../pieces/TextureRect13")
 
 [node name="slot8" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 165.0
@@ -178,9 +180,9 @@ offset_top = 426.0
 offset_right = 234.0
 offset_bottom = 494.0
 script = ExtResource("6_dpxl4")
-correct_id = "14"
+correct_id = "12"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect14")
+texture_rect_path = NodePath("../../pieces/TextureRect12")
 
 [node name="slot9" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 303.0
@@ -188,9 +190,9 @@ offset_top = 358.0
 offset_right = 372.0
 offset_bottom = 426.0
 script = ExtResource("6_dpxl4")
-correct_id = "12"
+correct_id = "9"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect12")
+texture_rect_path = NodePath("../../pieces/TextureRect9")
 
 [node name="slot10" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 234.0
@@ -198,9 +200,9 @@ offset_top = 358.0
 offset_right = 303.0
 offset_bottom = 426.0
 script = ExtResource("6_dpxl4")
-correct_id = "11"
+correct_id = "8"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect11")
+texture_rect_path = NodePath("../../pieces/TextureRect8")
 
 [node name="slot11" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 164.5
@@ -208,9 +210,9 @@ offset_top = 358.0
 offset_right = 233.5
 offset_bottom = 426.0
 script = ExtResource("6_dpxl4")
-correct_id = "10"
+correct_id = "7"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect10")
+texture_rect_path = NodePath("../../pieces/TextureRect7")
 
 [node name="slot12" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 95.5
@@ -218,9 +220,9 @@ offset_top = 426.0
 offset_right = 164.5
 offset_bottom = 494.0
 script = ExtResource("6_dpxl4")
-correct_id = "13"
+correct_id = "11"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect13")
+texture_rect_path = NodePath("../../pieces/TextureRect11")
 
 [node name="slot13" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 95.5
@@ -228,9 +230,9 @@ offset_top = 358.0
 offset_right = 164.5
 offset_bottom = 426.0
 script = ExtResource("6_dpxl4")
-correct_id = "9"
+correct_id = "6"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect9")
+texture_rect_path = NodePath("../../pieces/TextureRect6")
 
 [node name="slot14" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 303.0
@@ -238,9 +240,9 @@ offset_top = 290.0
 offset_right = 372.0
 offset_bottom = 358.0
 script = ExtResource("6_dpxl4")
-correct_id = "8"
+correct_id = "4"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect8")
+texture_rect_path = NodePath("../../pieces/TextureRect4")
 
 [node name="slot15" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 234.0
@@ -248,9 +250,9 @@ offset_top = 290.0
 offset_right = 303.0
 offset_bottom = 358.0
 script = ExtResource("6_dpxl4")
-correct_id = "7"
+correct_id = "3"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect7")
+texture_rect_path = NodePath("../../pieces/TextureRect3")
 
 [node name="slot16" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 165.0
@@ -258,9 +260,9 @@ offset_top = 290.0
 offset_right = 234.0
 offset_bottom = 358.0
 script = ExtResource("6_dpxl4")
-correct_id = "6"
+correct_id = "2"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect6")
+texture_rect_path = NodePath("../../pieces/TextureRect2")
 
 [node name="slot17" parent="slots" instance=ExtResource("5_vwima")]
 offset_left = 95.5
@@ -268,39 +270,39 @@ offset_top = 290.0
 offset_right = 164.5
 offset_bottom = 358.0
 script = ExtResource("6_dpxl4")
-correct_id = "5"
+correct_id = "1"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect5")
+texture_rect_path = NodePath("../../pieces/TextureRect")
 
 [node name="slot18" parent="slots" instance=ExtResource("5_vwima")]
-offset_left = 303.0
-offset_top = 222.0
-offset_right = 372.0
-offset_bottom = 290.0
+offset_left = 372.0
+offset_top = 357.5
+offset_right = 441.0
+offset_bottom = 425.5
 script = ExtResource("6_dpxl4")
-correct_id = "4"
+correct_id = "10"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect4")
+texture_rect_path = NodePath("../../pieces/TextureRect10")
 
 [node name="slot19" parent="slots" instance=ExtResource("5_vwima")]
-offset_left = 234.0
-offset_top = 222.0
-offset_right = 303.0
-offset_bottom = 290.0
+offset_left = 372.0
+offset_top = 425.5
+offset_right = 441.0
+offset_bottom = 493.5
 script = ExtResource("6_dpxl4")
-correct_id = "3"
+correct_id = "15"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect3")
+texture_rect_path = NodePath("../../pieces/TextureRect15")
 
 [node name="slot20" parent="slots" instance=ExtResource("5_vwima")]
-offset_left = 165.0
-offset_top = 222.0
-offset_right = 234.0
-offset_bottom = 290.0
+offset_left = 371.5
+offset_top = 494.0
+offset_right = 440.5
+offset_bottom = 562.0
 script = ExtResource("6_dpxl4")
-correct_id = "2"
+correct_id = "20"
 level_path = NodePath("..")
-texture_rect_path = NodePath("../../pieces/TextureRect2")
+texture_rect_path = NodePath("../../pieces/TextureRect20")
 
 [node name="pieces" type="Node2D" parent="."]
 position = Vector2(-322, -277)
@@ -335,7 +337,7 @@ offset_left = 552.0
 offset_top = 578.0
 offset_right = 620.9
 offset_bottom = 646.0
-texture = ExtResource("10_ax504")
+texture = SubResource("CompressedTexture2D_kqios")
 id = "4"
 
 [node name="TextureRect5" parent="pieces" instance=ExtResource("5_vwima")]
@@ -343,7 +345,7 @@ offset_left = 276.0
 offset_top = 578.0
 offset_right = 344.9
 offset_bottom = 646.0
-texture = ExtResource("11_uftr1")
+texture = ExtResource("10_hk3yt")
 id = "5"
 
 [node name="TextureRect6" parent="pieces" instance=ExtResource("5_vwima")]
@@ -351,7 +353,7 @@ offset_left = 276.0
 offset_top = 646.0
 offset_right = 344.9
 offset_bottom = 714.0
-texture = ExtResource("12_cphhc")
+texture = ExtResource("13_uehtq")
 id = "6"
 
 [node name="TextureRect7" parent="pieces" instance=ExtResource("5_vwima")]
@@ -359,7 +361,7 @@ offset_left = 483.0
 offset_top = 646.0
 offset_right = 551.9
 offset_bottom = 714.0
-texture = ExtResource("13_uehtq")
+texture = ExtResource("12_cphhc")
 id = "7"
 
 [node name="TextureRect8" parent="pieces" instance=ExtResource("5_vwima")]
@@ -367,7 +369,7 @@ offset_left = 414.0
 offset_top = 578.0
 offset_right = 482.9
 offset_bottom = 646.0
-texture = ExtResource("14_ao2s1")
+texture = ExtResource("11_uftr1")
 id = "8"
 
 [node name="TextureRect9" parent="pieces" instance=ExtResource("5_vwima")]
@@ -375,7 +377,7 @@ offset_left = 345.0
 offset_top = 646.0
 offset_right = 413.9
 offset_bottom = 714.0
-texture = ExtResource("15_t6s48")
+texture = ExtResource("14_ao2s1")
 id = "9"
 
 [node name="TextureRect10" parent="pieces" instance=ExtResource("5_vwima")]
@@ -383,7 +385,7 @@ offset_left = 414.0
 offset_top = 646.0
 offset_right = 482.9
 offset_bottom = 714.0
-texture = ExtResource("16_o8ug5")
+texture = ExtResource("15_6v7ms")
 id = "10"
 
 [node name="TextureRect11" parent="pieces" instance=ExtResource("5_vwima")]
@@ -391,7 +393,7 @@ offset_left = 552.0
 offset_top = 646.0
 offset_right = 620.9
 offset_bottom = 714.0
-texture = ExtResource("17_qwk7q")
+texture = ExtResource("15_t6s48")
 id = "11"
 
 [node name="TextureRect12" parent="pieces" instance=ExtResource("5_vwima")]
@@ -399,7 +401,7 @@ offset_left = 483.0
 offset_top = 782.0
 offset_right = 551.9
 offset_bottom = 850.0
-texture = ExtResource("18_qvn7r")
+texture = ExtResource("16_o8ug5")
 id = "12"
 
 [node name="TextureRect13" parent="pieces" instance=ExtResource("5_vwima")]
@@ -407,7 +409,7 @@ offset_left = 483.0
 offset_top = 714.0
 offset_right = 552.0
 offset_bottom = 782.0
-texture = ExtResource("19_lixwo")
+texture = ExtResource("17_qwk7q")
 id = "13"
 
 [node name="TextureRect14" parent="pieces" instance=ExtResource("5_vwima")]
@@ -415,7 +417,7 @@ offset_left = 344.5
 offset_top = 713.5
 offset_right = 413.4
 offset_bottom = 781.5
-texture = ExtResource("20_ljca0")
+texture = ExtResource("18_qvn7r")
 id = "14"
 
 [node name="TextureRect15" parent="pieces" instance=ExtResource("5_vwima")]
@@ -423,7 +425,7 @@ offset_left = 276.0
 offset_top = 782.0
 offset_right = 344.9
 offset_bottom = 850.0
-texture = ExtResource("21_ydx1k")
+texture = ExtResource("20_tlbc5")
 id = "15"
 
 [node name="TextureRect16" parent="pieces" instance=ExtResource("5_vwima")]
@@ -431,7 +433,7 @@ offset_left = 345.0
 offset_top = 782.0
 offset_right = 413.9
 offset_bottom = 850.0
-texture = ExtResource("22_qw6a6")
+texture = ExtResource("19_lixwo")
 id = "16"
 
 [node name="TextureRect17" parent="pieces" instance=ExtResource("5_vwima")]
@@ -439,7 +441,7 @@ offset_left = 414.0
 offset_top = 782.0
 offset_right = 482.9
 offset_bottom = 850.0
-texture = ExtResource("23_82kot")
+texture = ExtResource("20_ljca0")
 id = "17"
 
 [node name="TextureRect18" parent="pieces" instance=ExtResource("5_vwima")]
@@ -447,7 +449,7 @@ offset_left = 414.0
 offset_top = 714.0
 offset_right = 482.9
 offset_bottom = 782.0
-texture = ExtResource("24_vvs82")
+texture = ExtResource("21_ydx1k")
 id = "18"
 
 [node name="TextureRect19" parent="pieces" instance=ExtResource("5_vwima")]
@@ -455,7 +457,7 @@ offset_left = 276.0
 offset_top = 714.0
 offset_right = 344.9
 offset_bottom = 782.0
-texture = ExtResource("25_a24hl")
+texture = ExtResource("22_qw6a6")
 id = "19"
 
 [node name="TextureRect20" parent="pieces" instance=ExtResource("5_vwima")]
@@ -463,7 +465,7 @@ offset_left = 551.5
 offset_top = 781.5
 offset_right = 620.4
 offset_bottom = 849.5
-texture = ExtResource("26_vo2ue")
+texture = ExtResource("9_5i50y")
 id = "20"
 
 [node name="Done" parent="." instance=ExtResource("27_gk0yl")]
